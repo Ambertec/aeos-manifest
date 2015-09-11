@@ -146,7 +146,7 @@ fi
 
 cat <<EOF
 
-Welcome to Ångström ( A Yocto Project Compatible Distribution )
+Welcome to AEOS (Ångström based, Yocto Project Compatible Distribution )
 
 For more information about OpenEmbedded see their website:
     http://www.openembedded.org/
@@ -158,12 +158,5 @@ Your build environemnt has been configured with:
     DISTRO=${DISTRO}
 
 You can now run 'bitbake <target>'
-
-Some of common targets are:
-    console-image
-    systemd-gnome-image
-    xfce-nm-image
-    development-xfce-image
-    development-gnome-image
 
 EOF
