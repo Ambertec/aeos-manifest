@@ -111,6 +111,10 @@ ln -sf "${MANIFESTS}"/README.md README.md
 
 ln -sf "${MANIFESTS}" sources/
 
+ln -sf "${MANIFESTS}"/Makefile Makefile
+ln -sf deploy/glibc/images/beaglebone images
+ln -sf deploy/glibc/ipk packages
+
 repo sync
 repo start work --all
 repo rebase
@@ -146,7 +150,7 @@ fi
 
 cat <<EOF
 
-Welcome to AEOS (Ångström based, Yocto Project Compatible Distribution )
+Welcome to AEOS (Ångström based, Yocto Project Compatible Distribution)
 
 For more information about OpenEmbedded see their website:
     http://www.openembedded.org/
