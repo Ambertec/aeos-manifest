@@ -27,7 +27,7 @@ deploy: .deploy
 
 .deploy :	
 	scp images/ambertec-$(DEVICE).fw root@$(HOST):/tmp/firmware.fw
-	ssh root@$(HOST) -C "/usr/sbin/firmware_install /tmp/firmware.fw && /sbin/reboot"
+	ssh root@$(HOST) -C "FORCE=yes /usr/sbin/firmware_install /tmp/firmware.fw && /sbin/reboot"
 
 config: .config
 
