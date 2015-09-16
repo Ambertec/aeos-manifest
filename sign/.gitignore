@@ -1,0 +1,4 @@
+# Make sure keys do not leak to git
+firmware.key
+firmware.pub
+firmware.aes
