@@ -18,7 +18,7 @@
   <project remote="github" name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" revision="fido"/>
 
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" revision="angstrom-v2015.06-yocto1.8">
-      <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+	<copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   
   <project remote="yocto" name="meta-ti" path="sources/meta-ti" revision="fido"/>
@@ -28,6 +28,10 @@
   <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
   <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
   
-  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="fido"/>
+  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="fido">
+	<linkfile dest="Makefile" src="Makefile" />
+	<linkfile dest="images" src="../../deploy/glibc/images/" />
+	<linkfile dest="packages" src="../../deploy/glibc/ipk/" />
+  </project>
 
 </manifest>
