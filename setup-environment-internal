@@ -108,11 +108,10 @@ sha512sum "${MANIFESTS}"/setup-environment-internal 2>&1 > conf/checksum
 ln -sf "${MANIFESTS}"/conf/local.conf conf/local.conf
 ln -sf "${MANIFESTS}"/conf/bblayers.conf conf/bblayers.conf
 ln -sf "${MANIFESTS}"/README.md README.md
-ln -sf "${MANIFESTS}"/sign sign
 ln -sf "${MANIFESTS}" sources/
 ln -sf "${MANIFESTS}"/Makefile Makefile
-ln -sf deploy/glibc/images/beaglebone images
-ln -sf deploy/glibc/ipk packages
+ln -sf "deploy/glibc/images/" images
+ln -sf "deploy/glibc/ipk/" packages
 
 repo sync
 repo start work --all

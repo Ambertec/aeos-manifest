@@ -2,7 +2,7 @@
 # Makefile for debugging and testing
 #
 
-DEVICE ?= bft
+DEVICE ?= ambertec-bft
 HOST ?= ambertec.local
 MACHINE ?= beaglebone
 
@@ -21,12 +21,12 @@ clean : .clean .clean-$(DEVICE)
 build: .build
 
 .build :
-	bitbake ambertec-$(DEVICE)-image
+	bitbake aeos-$(DEVICE)-image
 
 deploy: .deploy
 
 .deploy :	
-	scp images/ambertec-$(DEVICE).fw root@$(HOST):/tmp/firmware.fw
+	scp images/$(MACHINE)/aeos-$(DEVICE).fw root@$(HOST):/tmp/firmware.fw
 	ssh root@$(HOST) -C "FORCE=yes /usr/sbin/firmware_install /tmp/firmware.fw && /sbin/reboot"
 
 config: .config
