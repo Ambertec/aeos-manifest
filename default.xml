@@ -16,7 +16,6 @@
   <project remote="github" name="openembedded/meta-openembedded" path="sources/meta-openembedded" revision="fido" />
   <project remote="github" name="openembedded/bitbake" path="sources/bitbake" revision="1.26"/>
   <project remote="github" name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" revision="fido"/>
-
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" revision="angstrom-v2015.06-yocto1.8">
 	<copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
