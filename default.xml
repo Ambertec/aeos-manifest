@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <default revision="master" sync-j="4"/>
-
-  <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="https://github.com" name="github"/>
   <remote fetch="https://bitbucket.org" name="bitbucket"/>
+  <remote fetch="https://github.com" name="github"/>
   <remote fetch="http://git.linaro.org" name="linaro"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
 
   <remote fetch="ssh://git@github.com" name="github-ssh"/>
-
-  <project remote="linaro" name="openembedded/meta-linaro" path="sources/meta-linaro" revision="fido" />
-
-  <project remote="github" name="openembedded/openembedded-core" path="sources/openembedded-core" revision="fido" />
-  <project remote="github" name="openembedded/meta-openembedded" path="sources/meta-openembedded" revision="fido" />
-  <project remote="github" name="openembedded/bitbake" path="sources/bitbake" revision="1.26"/>
-  <project remote="github" name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" revision="fido"/>
-  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" revision="angstrom-v2015.06-yocto1.8">
-      <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
-  </project>
   
-  <project remote="yocto" name="meta-ti" path="sources/meta-ti" revision="fido"/>
+  <default revision="master" sync-j="4"/>
+  
+  <project name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" remote="github" revision="angstrom-v2015.12-yocto2.0">
+    <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
+  <project name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" remote="github" revision="5cfaa3c989e587be2c8e43f6272f97a00547c2c5" upstream="master"/>
+  <project name="meta-ti" path="sources/meta-ti" remote="yocto" revision="5920c55bc0764338cd29debeb67a885a12d12fe2" upstream="master"/>
+  <project name="openembedded/bitbake" path="sources/bitbake" remote="github" revision="7b3ed62800cb7352154897c1c5ad2440a54df198" upstream="master"/>
+  <project name="openembedded/meta-linaro" path="sources/meta-linaro" remote="linaro" revision="jethro"/>
+  <project name="openembedded/meta-openembedded" path="sources/meta-openembedded" remote="github" revision="jethro"/>
+  <project name="openembedded/openembedded-core" path="sources/openembedded-core" remote="github" revision="jethro"/>
 
-  <project remote="github" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.26"/>
+  <remote fetch="ssh://git@github.com" name="github-ssh"/>
+  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.26"/>
   <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
   <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
   <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="fido">
-	<linkfile dest="Makefile" src="Makefile" />
-	<linkfile dest="images" src="../../deploy/glibc/images/" />
-	<linkfile dest="packages" src="../../deploy/glibc/ipk/" />
+        <linkfile dest="Makefile" src="Makefile" />
+        <linkfile dest="images" src="../../deploy/glibc/images/" />
+        <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
   </project>
 
 </manifest>
+
