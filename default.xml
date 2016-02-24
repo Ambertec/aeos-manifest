@@ -14,7 +14,7 @@
   <project name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" remote="github" revision="angstrom-v2015.12-yocto2.0">
     <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" remote="github" revision="5cfaa3c989e587be2c8e43f6272f97a00547c2c5" upstream="master"/>
+  <project name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" remote="github" revision="e1d997b265bd2cf8fa42e4568d0d39ccf771364c" upstream="master"/>
   <project name="meta-ti" path="sources/meta-ti" remote="yocto" revision="5920c55bc0764338cd29debeb67a885a12d12fe2" upstream="master"/>
   <project name="openembedded/bitbake" path="sources/bitbake" remote="github" revision="7b3ed62800cb7352154897c1c5ad2440a54df198" upstream="master"/>
   <project name="openembedded/meta-linaro" path="sources/meta-linaro" remote="linaro" revision="jethro"/>
