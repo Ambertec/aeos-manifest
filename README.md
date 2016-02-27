@@ -22,7 +22,7 @@ Run repo init to bring down the latest version of Repo with all its most recent 
 
 To check out a other than default branch, specify it with -b:
 
-	$ repo init -u git://github.com/Ambertec/aeom-manifest -b angstrom-v2015.12-yocto2.0
+	$ repo init -u git://github.com/Ambertec/aeos-manifest -b angstrom-v2015.12-yocto2.0 --config-name
 
 When prompted, configure Repo with your real name and email address.
 
