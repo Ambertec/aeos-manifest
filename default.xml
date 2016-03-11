@@ -22,14 +22,19 @@
   <project name="openembedded/openembedded-core" path="sources/openembedded-core" remote="github" revision="jethro"/>
 
   <remote fetch="ssh://git@github.com" name="github-ssh"/>
-  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.26"/>
-  <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
-  <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
-  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="jethro">
+
+  <project remote="github-ssh" name="Ambertec/meta-aeos" path="sources/meta-aeos" revision="jethro">
         <linkfile dest="Makefile" src="Makefile" />
         <linkfile dest="images" src="../../deploy/glibc/images/" />
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
+	<linkfile dest="keys" src="keys" />
   </project>
+
+  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="jethro"/>
+
+  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.26"/>
+  <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
+  <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
 
 </manifest>
 

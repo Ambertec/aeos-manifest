@@ -22,7 +22,7 @@ Run repo init to bring down the latest version of Repo with all its most recent 
 
 To check out a other than default branch, specify it with -b:
 
-	$ repo init -u git://github.com/Ambertec/aeos-manifest -b angstrom-v2015.12-yocto2.0 --config-name
+	$ repo init -u git://github.com/Ambertec/aeos-manifest -b jethro --config-name
 
 When prompted, configure Repo with your real name and email address.
 
@@ -48,7 +48,7 @@ Setup Environment
 	$ . setup-environment
 
 	$ MACHINE=<machine> bitbake <image>
-	e.g. MACHINE=beaglebone bitbake ambertec-core-image
+	e.g. MACHINE=beaglebone bitbake aeos-minimal-image
 
 Creating a local topic branch
 -----------------------------
@@ -92,5 +92,5 @@ LICENSE
 -------
 
 * MIT
-* meta-ambertec layer is commercially licensed and proprietary software of Ambertec Oy Ltd
+* meta-aeos and meta-ambertec layers are commercially licensed and proprietary software of Ambertec Oy Ltd
 
