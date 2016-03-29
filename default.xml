@@ -31,7 +31,7 @@
 
   <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="jethro"/>
 
-  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.26"/>
+  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.28"/>
   <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
   <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
   <project remote="github-ssh" name="imyller/meta-micropython" path="sources/meta-micropython"/>
