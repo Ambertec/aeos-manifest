@@ -20,16 +20,15 @@
 
   <remote fetch="ssh://git@github.com" name="github-ssh"/>
 
-  <project remote="github-ssh" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="jethro">
+  <project remote="github-ssh" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="krogoth">
         <linkfile dest="Makefile" src="Makefile" />
         <linkfile dest="images" src="../../deploy/glibc/images/" />
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
         <linkfile dest="keys" src="keys" />
   </project>
 
-  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="jethro"/>
+  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth"/>
 
-  <project remote="github-ssh" name="imyller/bitbake-npm" path="layers/bitbake-npm" revision="1.28"/>
   <project remote="github-ssh" name="imyller/meta-nodejs" path="layers/meta-nodejs"/>
   <project remote="github-ssh" name="imyller/meta-btsync" path="layers/meta-btsync"/>
   <project remote="github-ssh" name="imyller/meta-micropython" path="layers/meta-micropython"/>
