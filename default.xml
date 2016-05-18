@@ -6,35 +6,32 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
   <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
-
-  <remote fetch="ssh://git@github.com" name="github-ssh"/>
   
   <default revision="master" sync-j="4"/>
   
-  <project name="Angstrom-distribution/meta-angstrom" path="sources/meta-angstrom" remote="github" revision="angstrom-v2015.12-yocto2.0">
+  <project name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" remote="github" revision="angstrom-v2016.06-yocto2.1">
     <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project name="koenkooi/meta-beagleboard" path="sources/meta-beagleboard" remote="github"/>
-  <project name="openembedded/bitbake" path="sources/bitbake" remote="github" revision="7b3ed62800cb7352154897c1c5ad2440a54df198" upstream="master"/>
-  <project name="openembedded/meta-linaro" path="sources/meta-linaro" remote="linaro" revision="jethro"/>
-  <project name="openembedded/meta-openembedded" path="sources/meta-openembedded" remote="github" revision="jethro"/>
-  <project name="openembedded/openembedded-core" path="sources/openembedded-core" remote="github" revision="jethro"/>
+  <project name="koenkooi/meta-beagleboard" path="layers/meta-beagleboard" remote="github" revision="bcfe15fd7500523d6d256cb9872e496beaf249da" upstream="master"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="d19e305ffa44a848b02ede63dc5de8d2640089e6" upstream="master"/>
+  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="f1469457a3661799d4c8dafc72779a07bd0439da" upstream="master"/>
+  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="krogoth"/>
+  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="krogoth"/>
 
   <remote fetch="ssh://git@github.com" name="github-ssh"/>
 
-  <project remote="github-ssh" name="Ambertec/meta-aeos" path="sources/meta-aeos" revision="jethro">
+  <project remote="github-ssh" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="jethro">
         <linkfile dest="Makefile" src="Makefile" />
         <linkfile dest="images" src="../../deploy/glibc/images/" />
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
-	<linkfile dest="keys" src="keys" />
+        <linkfile dest="keys" src="keys" />
   </project>
 
-  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="sources/meta-ambertec" revision="jethro"/>
+  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="jethro"/>
 
-  <project remote="github-ssh" name="imyller/bitbake-npm" path="sources/bitbake-npm" revision="1.28"/>
-  <project remote="github-ssh" name="imyller/meta-nodejs" path="sources/meta-nodejs"/>
-  <project remote="github-ssh" name="imyller/meta-btsync" path="sources/meta-btsync"/>
-  <project remote="github-ssh" name="imyller/meta-micropython" path="sources/meta-micropython"/>
-
+  <project remote="github-ssh" name="imyller/bitbake-npm" path="layers/bitbake-npm" revision="1.28"/>
+  <project remote="github-ssh" name="imyller/meta-nodejs" path="layers/meta-nodejs"/>
+  <project remote="github-ssh" name="imyller/meta-btsync" path="layers/meta-btsync"/>
+  <project remote="github-ssh" name="imyller/meta-micropython" path="layers/meta-micropython"/>
 </manifest>
 
