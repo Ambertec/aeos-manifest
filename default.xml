@@ -29,7 +29,7 @@
 
   <project remote="github-ssh" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth"/>
 
-  <project remote="github-ssh" name="imyller/meta-nodejs" path="layers/meta-nodejs"/>
+  <project remote="github-ssh" name="imyller/meta-nodejs" path="layers/meta-nodejs" revision="krogoth"/>
   <project remote="github-ssh" name="imyller/meta-btsync" path="layers/meta-btsync"/>
   <project remote="github-ssh" name="imyller/meta-micropython" path="layers/meta-micropython"/>
 </manifest>
