@@ -18,20 +18,20 @@
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="krogoth"/>
   <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="krogoth"/>
 
-  <remote fetch="ssh://git@github.com" name="github-ssh"/>
+  <!-- AEOS -->
 
-  <project remote="github-ssh" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="krogoth">
+  <remote fetch="ssh://git@github.com" name="private"/>
+
+  <project remote="private" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="krogoth" groups="aeos">
         <linkfile dest="Makefile" src="Makefile" />
         <linkfile dest="images" src="../../deploy/glibc/images/" />
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
         <linkfile dest="keys" src="keys" />
   </project>
-
-  <project remote="github-ssh" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth"/>
-
-  <project remote="github-ssh" name="imyller/meta-nodejs" path="layers/meta-nodejs" revision="krogoth"/>
-  <project remote="github-ssh" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" revision="krogoth"/>
-  <project remote="github-ssh" name="imyller/meta-btsync" path="layers/meta-btsync"/>
-  <project remote="github-ssh" name="imyller/meta-micropython" path="layers/meta-micropython"/>
+  <project remote="private" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth" groups="aeos"/>
+  <project remote="private" name="imyller/meta-nodejs" path="layers/meta-nodejs" revision="krogoth" groups="aeos"/>
+  <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" revision="krogoth" groups="aeos"/>
+  <project remote="private" name="imyller/meta-btsync" path="layers/meta-btsync" groups="aeos"/>
+  <project remote="private" name="imyller/meta-micropython" path="layers/meta-micropython" groups="aeos"/>
 </manifest>
 
