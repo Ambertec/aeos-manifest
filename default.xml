@@ -31,7 +31,7 @@
   <project remote="private" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth" groups="aeos"/>
   <project remote="private" name="imyller/meta-nodejs" path="layers/meta-nodejs" revision="krogoth" groups="aeos"/>
   <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" revision="krogoth" groups="aeos"/>
-  <project remote="private" name="imyller/meta-btsync" path="layers/meta-btsync" groups="aeos"/>
+  <project remote="private" name="imyller/meta-rslsync" path="layers/meta-rslsync" groups="aeos"/>
   <project remote="private" name="imyller/meta-micropython" path="layers/meta-micropython" groups="aeos"/>
 </manifest>
 
