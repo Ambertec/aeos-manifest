@@ -13,7 +13,7 @@
     <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   <project name="openembedded/bitbake" path="bitbake" remote="github" revision="d19e305ffa44a848b02ede63dc5de8d2640089e6" upstream="master"/>
-  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="f1469457a3661799d4c8dafc72779a07bd0439da" upstream="master"/>
+  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="krogoth" />
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="krogoth"/>
   <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="krogoth"/>
 
