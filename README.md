@@ -16,6 +16,12 @@ To configure the scripts and download the build metadata, do:
 	$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 	$ chmod a+x ~/bin/repo
 
+Please note that repo requires python2, some distributions which default to python3 might need below fix
+
+	sed -i "s%/usr/bin/env python$%/usr/bin/env python2%" ~/bin/repo
+
+you might have to re-run this command everytime repo tool is updated in ~/bin/repo
+
 Run repo init to bring down the latest version of Repo with all its most recent bug fixes. You must specify a URL for the manifest, which specifies where the various repositories included in the Android source will be placed within your working directory.
 
 	$ repo init -u git://github.com/Ambertec/aeos-manifest --config-name
@@ -45,7 +51,7 @@ More rarely, Linux clients experience connectivity issues, getting stuck in the 
 
 Setup Environment
 -----------------
-	$ . setup-environment
+	$ . ./setup-environment
 
 	$ MACHINE=<machine> bitbake <image>
 	e.g. MACHINE=beaglebone bitbake aeos-minimal-image
@@ -56,7 +62,7 @@ Creating a local topic branch
 Setup will already create a branch called $USER/work
 but if you need to create local branches for all repos which then can be done e.g.
 
-	$ ~/bin/repo start myaeos --all
+	$ repo start myaeos --all
 
 Where 'myaeos' is the name of branch you choose
 
@@ -93,4 +99,3 @@ LICENSE
 
 * MIT
 * meta-aeos and meta-ambertec layers are commercially licensed and proprietary software of Ambertec Oy Ltd
-

@@ -6,16 +6,18 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
   <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
-  
-  <default revision="master" sync-j="4"/>
-  
-  <project name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" remote="github" revision="angstrom-v2016.06-yocto2.1">
+
+  <default revision="morty" sync-j="4"/>
+
+  <project name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" remote="github" revision="angstrom-v2016.12-yocto2.2" >
     <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="d19e305ffa44a848b02ede63dc5de8d2640089e6" upstream="master"/>
-  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="krogoth" />
-  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="krogoth"/>
-  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="krogoth"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="1.32" />
+  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" />
+  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" />
+ 
+  <project name="koenkooi/meta-beagleboard" path="layers/meta-beagleboard" remote="github" revision="3803dc2e65f8ca6ec940b346ed39d09eba3cc6b1" upstream="master"/>
+  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="db09d028933ba2f86c2db2de916426103c6f20c8" upstream="master"/>
 
   <!-- AEOS -->
 
@@ -33,5 +35,6 @@
   <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" revision="krogoth" groups="aeos"/>
   <project remote="private" name="imyller/meta-rslsync" path="layers/meta-rslsync" groups="aeos"/>
   <project remote="private" name="imyller/meta-micropython" path="layers/meta-micropython" groups="aeos"/>
+
 </manifest>
 
