@@ -22,18 +22,18 @@
 
   <remote fetch="ssh://git@github.com" name="private"/>
 
-  <project remote="private" name="Ambertec/meta-aeos" path="layers/meta-aeos" revision="krogoth" groups="aeos">
+  <project remote="private" name="Ambertec/meta-aeos" path="layers/meta-aeos" groups="aeos">
         <linkfile dest="Makefile" src="Makefile" />
         <linkfile dest="images" src="../../deploy/glibc/images/" />
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
         <linkfile dest="keys" src="keys" />
   </project>
   <project remote="private" name="imyller/meta-beagleboard" path="layers/meta-beagleboard" revision="master"/>
-  <project remote="private" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" revision="krogoth" groups="aeos"/>
-  <project remote="private" name="imyller/meta-nodejs" path="layers/meta-nodejs" revision="krogoth" groups="aeos"/>
-  <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" revision="krogoth" groups="aeos"/>
-  <project remote="private" name="imyller/meta-rslsync" path="layers/meta-rslsync" groups="aeos"/>
-  <project remote="private" name="imyller/meta-micropython" path="layers/meta-micropython" groups="aeos"/>
+  <project remote="private" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" groups="aeos"/>
+  <project remote="private" name="imyller/meta-nodejs" path="layers/meta-nodejs"  groups="aeos"/>
+  <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" groups="aeos"/>
+  <project remote="private" name="imyller/meta-rslsync" path="layers/meta-rslsync" revision="master" groups="aeos"/>
+  <project remote="private" name="imyller/meta-micropython" path="layers/meta-micropython" revision="master" groups="aeos"/>
 
 </manifest>
 
