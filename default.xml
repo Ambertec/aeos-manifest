@@ -28,7 +28,7 @@
         <linkfile dest="packages" src="../../deploy/glibc/ipk/" />
         <linkfile dest="keys" src="keys" />
   </project>
-  <project remote="private" name="imyller/meta-beagleboard" path="layers/meta-beagleboard" revision="master"/>
+  <project remote="private" name="imyller/meta-beagleboard" path="layers/meta-beagleboard" revision="linux-4.9"/>
   <project remote="private" name="Ambertec/meta-ambertec" path="layers/meta-ambertec" groups="aeos"/>
   <project remote="private" name="imyller/meta-nodejs" path="layers/meta-nodejs"  groups="aeos"/>
   <project remote="private" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" groups="aeos"/>
