@@ -16,7 +16,6 @@
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" />
   <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" />
  
-  <project name="koenkooi/meta-beagleboard" path="layers/meta-beagleboard" remote="github" revision="3803dc2e65f8ca6ec940b346ed39d09eba3cc6b1" upstream="master"/>
   <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="db09d028933ba2f86c2db2de916426103c6f20c8" upstream="master"/>
 
   <!-- AEOS -->
